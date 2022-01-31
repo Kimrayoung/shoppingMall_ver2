@@ -1,0 +1,79 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    width: 1400px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login_nav {
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.login_nav > a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    margin-left: 20px;
+}
+
+.name {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 30px;
+    size: 15px;
+}
+
+.navbar > a {
+    margin-left: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+.navbar > a:hover {
+    text-decoration: black;
+}
+  
+.big_login_box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#myform {
+    width: 400px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgba(0, 0, 0, 0.198);
+    justify-content: center;
+    align-items: center;
+}
+
+#store {
+    width: 100px;
+}
+
+#myform > input {
+    margin: 10px;
+    width: 300px;
+    height: 50px;
+    border: 3px solid black;
+    font-size: 20px;
+}

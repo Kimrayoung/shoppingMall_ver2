@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>테스트용 데이터 생성</title>
+</head>
+<body>
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script>
+    async function makeList() {  //아이템 목록 만들어주기
+        const result = [];
+
+        for (let i = 0; i < 100; i++) {
+            result.push({
+                name: `아미렌 ${i + 1} 핀턱 4부 데님 팬츠`,
+                size: 32,
+                type: '바지',
+                price: 13000
+            });
+
+        }
+        console.log('dummy data 들어갔는지 확인',result);
+
+        await axios.post('/items/dummy',result);
+    }
+
+    makeList();
+</script>
+</body>
+</html>

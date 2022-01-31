@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인</title>
+    <link href="/login.css" rel="stylesheet" type="text/css"></link>
+</head>
+<body>
+    <div class="container">
+        <div class="login_nav">
+            <a href="login.html" class="login_text">{{userId}}</a>
+            <a href="signup.html" class="signup_text">회원가입</a>
+        </div>
+        <a href="/"><div class="name"><img src="../img/main_logo.png"></div></a>
+        <div class="navbar">
+            <a href="#">EVENT</a>
+            <a href="#">BEST</a>
+            <a href="#">summer</a>
+            <a href="onepiece.html">원피스</a>
+            <a href="bottom.html">하의</a>
+            <a href="#">아우터</a>
+            <a href="fitness.html">피트니스웨어</a>
+            <a href="homewear.html">홈웨어</a>
+            <a href="underwear.html">언더웨어</a>
+            <a href="setsale.html">세트할인</a>
+        </div>
+        
+        <div class="big_login_box">
+            <form id="myform" name="myform" action="users/login" method="POST">
+                <h2>로그인</h2>
+                <input name="arr" id="arr" type="hidden">
+                <label for="userid"></label>
+                <input name="id" id="name" type="text" placeholder="아이디" value="rlafkdud1228">
+                <label for="userpw"></label>
+                <input name="password" id="password" type="password" placeholder="비밀번호" value="fkdud2579">
+                <input name="store" id="store" type="submit" value="제출">
+            </form>
+        </div>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="/localstorage.js"></script>
+    <script src="/localstorage2.js"></script>
+    <script scr="/login.js"></script>
+</body>
+</html>

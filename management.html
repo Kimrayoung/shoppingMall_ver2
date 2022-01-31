@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>management</title>
+    <link href="management.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="introduce">
+        <div class="name"><img src="/img/main_logo.png"></div>
+    </div>
+    <div class="container">
+        <div class="navbar">
+            <button class="add">추가</button>
+            <button class="all">all</button>
+            <button class="onepiece">onepiece</button>
+            <button class="top">top</button>
+            <button class="bottom">bottom</button>
+        </div>
+        <div class="products">
+        </div>
+        <div class="page"></div>
+    </div>
+    
+    <form class="modal modal_modify" action="/items/management/store" method="POST" enctype="multipart/form-data">
+        <div class="modal_content">
+            <input name="id" id="id" type="hidden" value="">
+
+            <label for="name">상품명</label>
+            <input name="name" id="name" type="text" placeholder="상품명">
+
+            <label for="size">사이즈</label>
+            <input name="size" id="size" type="text" placeholder="사이즈">
+
+            <label for="type">타입</label>
+            <input name="type" id="type" type="text" placeholder="타입">
+
+            <label for="image">이미지</label>
+            <input name="image" id="image" type="file" accept='image/jpg imgae/png image/jpeg image/webp'>
+            <!--text/사진 이름으로 받아서 url로 붙여넣기-->
+
+            <label for="price">가격</label>
+            <input name="price" id="price" type="text" placeholder="가격">
+
+            <label for="colors">색깔</label>
+            <input name="colors" id="colors" type="text" placeholder="색깔">
+
+            <input class="modal_store" type="submit" value="저장">
+        </div>
+    </form>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="/paging.js"></script>
+    <script src="/management.js"></script>
+</body>
+</html>
